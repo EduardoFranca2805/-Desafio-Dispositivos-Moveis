@@ -1,0 +1,147 @@
+/* Reset e o que vale para o site inteiro */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--fonte-texto);
+  font-size: var(--texto-m);
+  line-height: 1.5;
+  color: var(--cor-tinta);
+  background: var(--cor-fundo);
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--fonte-titulo);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+a {
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+input,
+select,
+button {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--cor-foco);
+  outline-offset: 2px;
+}
+
+/* O contêiner das telas. Não é filho de flex, então max-width aqui é seguro.
+   O padding de baixo deixa espaço para o menu fixo. */
+#app {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: var(--esp-5) var(--esp-4) calc(var(--esp-7) + 4rem);
+}
+
+/* Botões e campos compartilhados por todas as telas */
+.botao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--esp-2);
+  min-height: 44px;
+  padding: var(--esp-2) var(--esp-5);
+  border: 2px solid var(--cor-tinta);
+  border-radius: var(--raio-2);
+  background: var(--cor-superficie);
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.botao--destaque {
+  border-color: var(--cor-destaque);
+  background: var(--cor-destaque);
+  color: var(--cor-sobre-destaque);
+}
+
+.botao--escuro {
+  background: var(--cor-tinta);
+  color: var(--cor-superficie);
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--esp-1);
+}
+
+.campo__rotulo {
+  font-weight: 600;
+  font-size: var(--texto-p);
+}
+
+.campo__entrada {
+  min-height: 44px;
+  padding: var(--esp-2) var(--esp-3);
+  border: 2px solid var(--cor-linha);
+  border-radius: var(--raio-1);
+  background: var(--cor-superficie);
+}
+
+.campo__entrada:focus-visible {
+  border-color: var(--cor-foco);
+}
+
+.campo__ajuda {
+  font-size: var(--texto-p);
+  color: var(--cor-tinta-suave);
+}
+
+.aviso {
+  padding: var(--esp-3) var(--esp-4);
+  border-radius: var(--raio-1);
+  border-left: 4px solid currentColor;
+}
+
+.aviso--erro {
+  color: var(--cor-erro);
+  background: var(--cor-erro-fundo);
+}
+
+.aviso--ok {
+  color: var(--cor-ok);
+  background: var(--cor-ok-fundo);
+}
+
+.aviso a {
+  font-weight: 600;
+}
+
+.texto-suave {
+  color: var(--cor-tinta-suave);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

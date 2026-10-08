@@ -1,0 +1,129 @@
+.detalhe {
+  display: flex;
+  flex-direction: column;
+  gap: var(--esp-5);
+}
+
+.detalhe__voltar {
+  display: flex;
+  align-items: center;
+  gap: var(--esp-1);
+  font-weight: 600;
+}
+
+.detalhe__titulo {
+  font-size: var(--texto-xg);
+}
+
+/* A viagem em pé: saída em cima, chegada embaixo, a estrada no meio. */
+.viagem {
+  display: flex;
+  flex-direction: column;
+  padding: var(--esp-4);
+  border: var(--borda);
+  border-radius: var(--raio-2);
+  background: var(--cor-superficie);
+}
+
+.viagem__parada {
+  display: flex;
+  align-items: baseline;
+  gap: var(--esp-4);
+}
+
+.viagem__hora {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  font-family: var(--fonte-titulo);
+  font-size: var(--texto-xg);
+  font-weight: 700;
+}
+
+.viagem__lugar {
+  display: flex;
+  flex-direction: column;
+}
+
+.viagem__nome {
+  font-weight: 600;
+}
+
+.viagem__estrada {
+  display: flex;
+  min-height: var(--esp-6);
+  margin-left: 1.25rem;
+  border-left: 3px dashed var(--cor-linha);
+}
+
+/* A cor de destaque desta tela: a resposta "compensa?". */
+.decisao {
+  display: flex;
+  flex-direction: column;
+  gap: var(--esp-1);
+  padding: var(--esp-4);
+  border-radius: var(--raio-2);
+  background: var(--cor-tinta);
+  color: var(--cor-superficie);
+}
+
+.decisao--compensa {
+  background: var(--cor-destaque);
+  color: var(--cor-sobre-destaque);
+}
+
+.decisao__valor {
+  font-family: var(--fonte-titulo);
+  font-size: var(--texto-xxg);
+  line-height: 1;
+}
+
+.fatos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--esp-3);
+}
+
+.fatos__item {
+  display: flex;
+  flex: 1 1 6rem;
+  flex-direction: column;
+  padding: var(--esp-3);
+  border: var(--borda);
+  border-radius: var(--raio-1);
+  background: var(--cor-superficie);
+}
+
+.fatos__rotulo {
+  font-size: var(--texto-p);
+  color: var(--cor-tinta-suave);
+}
+
+.fatos__valor {
+  font-weight: 600;
+}
+
+.motorista {
+  display: flex;
+  align-items: center;
+  gap: var(--esp-3);
+  padding-top: var(--esp-4);
+  border-top: var(--borda);
+}
+
+.motorista__inicial {
+  display: flex;
+  flex: 0 0 3rem;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  border-radius: var(--raio-pilula);
+  background: var(--cor-asfalto);
+  color: var(--cor-faixa);
+  font-family: var(--fonte-titulo);
+  font-size: var(--texto-g);
+}
+
+.motorista__dados {
+  display: flex;
+  flex-direction: column;
+}

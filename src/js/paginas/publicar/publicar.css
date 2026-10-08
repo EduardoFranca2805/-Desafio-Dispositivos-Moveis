@@ -1,0 +1,55 @@
+.publicar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--esp-4);
+}
+
+.publicar__titulo {
+  font-size: var(--texto-xg);
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: var(--esp-4);
+  padding: var(--esp-4);
+  border: var(--borda);
+  border-radius: var(--raio-2);
+  background: var(--cor-superficie);
+}
+
+.formulario__grupo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--esp-3);
+  border: 0;
+}
+
+.formulario__legenda {
+  margin-bottom: var(--esp-2);
+  font-family: var(--fonte-titulo);
+  font-size: var(--texto-g);
+  font-weight: 700;
+}
+
+/* Dois campos lado a lado que viram coluna quando falta espaço. */
+.formulario__par {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--esp-3);
+}
+
+.formulario__par .campo {
+  flex: 1 1 8rem;
+}
+
+.formulario__enviar {
+  align-self: stretch;
+}
+
+.publicar__bloqueio {
+  display: flex;
+  flex-direction: column;
+  gap: var(--esp-3);
+  align-items: flex-start;
+}

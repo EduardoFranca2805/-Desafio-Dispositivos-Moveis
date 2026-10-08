@@ -1,0 +1,106 @@
+.inicio {
+  display: flex;
+  flex-direction: column;
+  gap: var(--esp-6);
+}
+
+.inicio__marca {
+  font-family: var(--fonte-titulo);
+  font-size: var(--texto-g);
+  font-weight: 700;
+  color: var(--cor-tinta-suave);
+}
+
+.inicio__busca {
+  display: flex;
+  flex-direction: column;
+  gap: var(--esp-3);
+}
+
+.inicio__pergunta {
+  font-size: var(--texto-xxg);
+}
+
+.inicio__linha {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--esp-2);
+}
+
+.inicio__campo {
+  flex: 1 1 12rem;
+  min-width: 0;
+  min-height: 52px;
+  padding: var(--esp-2) var(--esp-4);
+  border: 2px solid var(--cor-tinta);
+  border-radius: var(--raio-2);
+  background: var(--cor-superficie);
+  font-size: var(--texto-g);
+}
+
+.inicio__botao {
+  flex: 1 0 auto;
+  min-height: 52px;
+  font-size: var(--texto-g);
+}
+
+.inicio__turnos {
+  display: flex;
+  flex-direction: column;
+  gap: var(--esp-3);
+}
+
+.inicio__subtitulo {
+  font-size: var(--texto-g);
+}
+
+.inicio__lista-turnos {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  gap: var(--esp-2);
+}
+
+.inicio__item-turno {
+  display: flex;
+  flex: 1 1 9rem;
+}
+
+.turno {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  gap: var(--esp-3);
+  padding: var(--esp-3);
+  border: var(--borda);
+  border-radius: var(--raio-2);
+  background: var(--cor-superficie);
+  text-decoration: none;
+}
+
+.turno__icone {
+  flex: 0 0 auto;
+}
+
+.turno__textos {
+  display: flex;
+  flex-direction: column;
+}
+
+.turno__nome {
+  font-weight: 600;
+}
+
+.turno__total {
+  font-size: var(--texto-p);
+  color: var(--cor-tinta-suave);
+}
+
+.inicio__motorista {
+  padding-top: var(--esp-5);
+  border-top: var(--borda);
+}
+
+.inicio__motorista a {
+  font-weight: 600;
+}

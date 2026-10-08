@@ -1,0 +1,27 @@
+.nao-encontrada {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--esp-4);
+  padding-top: var(--esp-6);
+}
+
+/* A placa de "rua sem saída" desenhada só com borda e texto. */
+.nao-encontrada__placa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--esp-3) var(--esp-5);
+  border: 4px solid var(--cor-asfalto);
+  border-radius: var(--raio-1);
+  background: var(--cor-superficie);
+  font-family: var(--fonte-titulo);
+  font-size: var(--texto-xxg);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.nao-encontrada__titulo {
+  font-size: var(--texto-xg);
+}
+

@@ -1,0 +1,18 @@
+{
+  "name": "borajunto",
+  "version": "1.0.0",
+  "description": "Caronas universitárias para a Fatec Mogi das Cruzes (Desafio 1, dados mockados)",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "lucide": "^1.48.0"
+  },
+  "devDependencies": {
+    "vite": "^7.3.1"
+  },
+  "license": "MIT"
+}

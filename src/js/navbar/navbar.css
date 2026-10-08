@@ -1,0 +1,50 @@
+/* Menu fixo embaixo, como no KiOferta. Sem width fixo: left e right em 0
+   fazem a barra ocupar a tela de qualquer largura, inclusive 360px. */
+.navbar-bottom {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  padding: var(--esp-2) var(--esp-2) calc(var(--esp-2) + env(safe-area-inset-bottom, 0px));
+  background: var(--cor-asfalto);
+  color: var(--cor-faixa);
+  /* A faixa tracejada lembra a sinalização da pista. */
+  border-top: 4px dashed var(--cor-faixa);
+}
+
+.navbar {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
+}
+
+.navbar__lista {
+  display: flex;
+  flex: 0 1 30rem;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.navbar-item {
+  text-decoration: none;
+  color: var(--cor-faixa);
+}
+
+.navbar-item__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: var(--esp-1) var(--esp-3);
+  border-radius: var(--raio-1);
+  font-size: var(--texto-p);
+  font-weight: 500;
+}
+
+.navbar-item:hover {
+  background: var(--cor-faixa);
+  color: var(--cor-asfalto);
+}

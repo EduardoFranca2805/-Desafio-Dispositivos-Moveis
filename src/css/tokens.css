@@ -1,0 +1,47 @@
+/* Tokens: toda cor, fonte e espaçamento do projeto nasce aqui.
+   Nenhuma regra de outro arquivo escreve cor direto. */
+:root {
+  /* Cores de base: asfalto e sinalização de estrada */
+  --cor-fundo: #edf0f3;
+  --cor-superficie: #ffffff;
+  --cor-tinta: #18212b;
+  --cor-tinta-suave: #56616e;
+  --cor-linha: #cfd6de;
+  --cor-asfalto: #26303b;
+  --cor-faixa: #e9edf1;
+
+  /* A única cor de destaque. Cada tela usa em um só elemento. */
+  --cor-destaque: #f5b800;
+  --cor-sobre-destaque: #18212b;
+
+  /* Cores de estado (mensagens, não destaque) */
+  --cor-erro: #a8261d;
+  --cor-erro-fundo: #fbecea;
+  --cor-ok: #2d6a3e;
+  --cor-ok-fundo: #e7f2ea;
+  --cor-foco: #2f6fb0;
+
+  /* Tipografia */
+  --fonte-titulo: "Arial Narrow", Arial, sans-serif;
+  --fonte-texto: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --texto-p: 0.875rem;
+  --texto-m: 1rem;
+  --texto-g: 1.25rem;
+  --texto-xg: 1.75rem;
+  --texto-xxg: 2.5rem;
+
+  /* Espaçamento */
+  --esp-1: 0.25rem;
+  --esp-2: 0.5rem;
+  --esp-3: 0.75rem;
+  --esp-4: 1rem;
+  --esp-5: 1.5rem;
+  --esp-6: 2rem;
+  --esp-7: 3rem;
+
+  /* Bordas */
+  --raio-1: 4px;
+  --raio-2: 10px;
+  --raio-pilula: 999px;
+  --borda: 1px solid var(--cor-linha);
+}

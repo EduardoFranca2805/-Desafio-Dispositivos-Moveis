@@ -1,0 +1,3 @@
+/* Ponto de entrada do CSS global: importa os anteriores, nesta ordem. */
+@import "./tokens.css";
+@import "./base.css";

@@ -1,0 +1,78 @@
+// 8 contas: 4 motoristas (publicam caronas) e 4 passageiros (só procuram).
+// Senhas em texto puro porque é tudo mockado: não existe backend.
+const usuarios = [
+  {
+    id: 1,
+    nome: 'Larissa Okamoto',
+    email: 'larissa@borajunto.dev',
+    senha: 'carona123',
+    curso: 'ADS, 4º semestre',
+    motorista: true,
+    carro: 'Onix prata, 4 lugares',
+  },
+  {
+    id: 2,
+    nome: 'Diego Ferraz',
+    email: 'diego@borajunto.dev',
+    senha: 'carona123',
+    curso: 'Logística, 2º semestre',
+    motorista: true,
+    carro: 'HB20 branco, 4 lugares',
+  },
+  {
+    id: 3,
+    nome: 'Paula Nascimento',
+    email: 'paula@borajunto.dev',
+    senha: 'carona123',
+    curso: 'Gestão Empresarial, 5º semestre',
+    motorista: true,
+    carro: 'Gol vermelho, 4 lugares',
+  },
+  {
+    id: 4,
+    nome: 'Renato Albuquerque',
+    email: 'renato@borajunto.dev',
+    senha: 'carona123',
+    curso: 'Agronegócio, 3º semestre',
+    motorista: true,
+    carro: 'Spin cinza, 6 lugares',
+  },
+  {
+    id: 5,
+    nome: 'Bruna Tavares',
+    email: 'bruna@borajunto.dev',
+    senha: 'carona123',
+    curso: 'ADS, 1º semestre',
+    motorista: false,
+    carro: null,
+  },
+  {
+    id: 6,
+    nome: 'Caio Mendes',
+    email: 'caio@borajunto.dev',
+    senha: 'carona123',
+    curso: 'Logística, 4º semestre',
+    motorista: false,
+    carro: null,
+  },
+  {
+    id: 7,
+    nome: 'Juliana Prado',
+    email: 'juliana@borajunto.dev',
+    senha: 'carona123',
+    curso: 'Gestão Empresarial, 2º semestre',
+    motorista: false,
+    carro: null,
+  },
+  {
+    id: 8,
+    nome: 'Matheus Lima',
+    email: 'matheus@borajunto.dev',
+    senha: 'carona123',
+    curso: 'ADS, 6º semestre',
+    motorista: false,
+    carro: null,
+  },
+];
+
+export default usuarios;
