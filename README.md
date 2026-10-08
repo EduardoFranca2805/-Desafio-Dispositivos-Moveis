@@ -49,4 +49,4 @@ Todos os dados são mockados e nada sobrevive a um F5 (caronas publicadas e logi
 
 ## Relatório
 
-O relatório está na raiz do projeto, nomeado como `relatorio.pdf`.
+O relatório está localizado na pasta `docs`.
