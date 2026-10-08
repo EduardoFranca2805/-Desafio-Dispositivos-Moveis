@@ -12,10 +12,13 @@
 
 html {
   -webkit-text-size-adjust: 100%;
+  background: var(--cor-fundo);
 }
 
 body {
+  width: 360px;
   min-height: 100vh;
+  margin: 0 auto;
   font-family: var(--fonte-texto);
   font-size: var(--texto-m);
   line-height: 1.5;
@@ -52,10 +55,10 @@ button {
   outline-offset: 2px;
 }
 
-/* O contêiner das telas. Não é filho de flex, então max-width aqui é seguro.
-   O padding de baixo deixa espaço para o menu fixo. */
+/* O contêiner das telas ocupa o canvas mobile fixo.
+  O padding de baixo deixa espaço para o menu fixo. */
 #app {
-  max-width: 40rem;
+  width: 360px;
   margin: 0 auto;
   padding: var(--esp-5) var(--esp-4) calc(var(--esp-7) + 4rem);
 }

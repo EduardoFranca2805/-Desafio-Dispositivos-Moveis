@@ -1,11 +1,11 @@
-/* Menu fixo embaixo, como no KiOferta. Sem width fixo: left e right em 0
-   fazem a barra ocupar a tela de qualquer largura, inclusive 360px. */
+/* Menu fixo alinhado ao canvas mobile de 360px. */
 .navbar-bottom {
   position: fixed;
-  right: 0;
+  left: 50%;
+  width: 360px;
   bottom: 0;
-  left: 0;
   z-index: 10;
+  transform: translateX(-50%);
   display: flex;
   justify-content: center;
   padding: var(--esp-2) var(--esp-2) calc(var(--esp-2) + env(safe-area-inset-bottom, 0px));
